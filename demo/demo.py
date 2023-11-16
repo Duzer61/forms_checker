@@ -3,14 +3,13 @@ import os
 import time
 
 import requests
-
 from demo_data import req_data
 
 REQ_URL = 'http://127.0.0.1:8000/get_form?'
 
 
 def get_responses():
-    """Отправляет POST-запросы и выводит в термиал ответы."""
+    """Отправляет POST-запросы и выводит в терминал ответы."""
 
     time.sleep(0.5)
     for data in req_data:
