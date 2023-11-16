@@ -60,7 +60,7 @@ forms_data = [
         'name': 'Starship form',
         'model': 'string',
         'manufacturer': 'string',
-        'production_date': 'date',
+        'speed': 'string',
         'description': 'string'
     },
     {
