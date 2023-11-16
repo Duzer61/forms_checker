@@ -11,7 +11,6 @@ REQ_URL = 'http://127.0.0.1:8000/get_form?'
 def get_responses():
     """Отправляет POST-запросы и выводит в терминал ответы."""
 
-    time.sleep(0.5)
     for data in req_data:
         url = REQ_URL + data
         try:
@@ -29,8 +28,8 @@ def get_responses():
 
 def main():
     os.system('clear')
-    time.sleep(0.5)
     print('Starting requests...', end='\n' * 3)
+    time.sleep(1)
     get_responses()
 
 
