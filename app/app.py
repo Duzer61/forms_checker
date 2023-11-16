@@ -95,3 +95,17 @@ def find_match_forms(validated_data):
         ):
             match_forms.append(form['name'])
     return sorted(match_forms)
+
+
+@app.route('/get_form', methods=['POST'])
+def get_form():
+    """Обрабатывает запрос на сравнение формы."""
+
+    request_data = dict(request.args)
+    validated_data = validate_request_data(request_data)
+    match_forms_names = find_match_forms(validated_data)
+    if match_forms_names:
+        return match_forms_names
+    else:
+        return validated_data
+
