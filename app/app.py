@@ -109,3 +109,6 @@ def get_form():
     else:
         return validated_data
 
+
+if __name__ == '__main__':
+    app.run(port=8000)
