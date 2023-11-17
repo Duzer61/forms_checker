@@ -12,7 +12,7 @@ def get_responses():
     """Отправляет POST-запросы и выводит в терминал ответы."""
 
     for data in req_data:
-        url = REQ_URL + data
+        url = REQ_URL + data.replace(' ', '%20').replace('+', '%2B')
         try:
             response = requests.post(url, timeout=1)
         except Exception:
