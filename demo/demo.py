@@ -3,7 +3,7 @@ import os
 import time
 
 import requests
-from demo_data import req_data
+from data_demo import req_data
 
 REQ_URL = 'http://127.0.0.1:8000/get_form?'
 
