@@ -1,7 +1,7 @@
 
 # Проект "Forms_checker". Написан в качестве тестового задания для [LeadHit](https://leadhit.ru/)
 
-### [Описание задания](https://docs.google.com/document/d/1fMFwPBs53xzcrltEFOpEG4GWTaQ-5jvVLrNT6_hmC7I/edit#heading=h.pieurecv5l1j)
+### Описание задания доступно [по ссылке](https://docs.google.com/document/d/1fMFwPBs53xzcrltEFOpEG4GWTaQ-5jvVLrNT6_hmC7I/edit#heading=h.pieurecv5l1j)
 ___
 ### Для запуска проекта в контейнерах на локальной машине должен быть установлен Docker.
 
