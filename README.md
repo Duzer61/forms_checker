@@ -3,7 +3,7 @@
 
 ### Описание задания доступно [по ссылке](https://docs.google.com/document/d/1fMFwPBs53xzcrltEFOpEG4GWTaQ-5jvVLrNT6_hmC7I/edit#heading=h.pieurecv5l1j)
 ___
-### Для запуска проекта в контейнерах на локальной машине должен быть установлен Docker.
+### Для запуска проекта в контейнерах на локальной машине должен быть установлен [Docker](https://www.docker.com/).
 
 Краткая инструкция по запуску:
 - скачать проект на локальную машину `git clone git@github.com:Duzer61/forms_checker.git`
