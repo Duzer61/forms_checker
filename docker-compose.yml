@@ -16,8 +16,8 @@ services:
     ports:
       - 8000:80
     depends_on:
-      - db
+      - app
   app:
     build: ./app/
     depends_on:
-      - nginx
+      - db
