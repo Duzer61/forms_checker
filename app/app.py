@@ -86,21 +86,14 @@ def validate_request_data(data: dict) -> dict:
     """
 
     for key, value in data.items():
-
         if is_date(value):
             data[key] = 'date'
-            continue
-
-        if is_phone_number(value):
+        elif is_phone_number(value):
             data[key] = 'phone'
-            continue
-
-        if is_email(value):
+        elif is_email(value):
             data[key] = 'email'
-            continue
-
-        data[key] = 'string'
-
+        else:
+            data[key] = 'string'
     return data
 
 
