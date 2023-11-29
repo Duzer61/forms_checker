@@ -18,6 +18,7 @@ def get_responses():
         except Exception:
             print(f"Error: {url}")
             continue
+        print(response)
         data = response.text
         print(f'Request: {url}')
         print()
