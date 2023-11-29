@@ -2,10 +2,9 @@ import time
 
 from pymongo import MongoClient
 
-from initial_data import forms_data
+from data.initial_data import forms_data
 
-
-client = MongoClient('mongodb://db:27017/')
+client: MongoClient = MongoClient('mongodb://db:27017/')
 
 db = client['mongo_db']
 
@@ -13,6 +12,8 @@ collection = db['form_templates']
 
 
 def load_initial_data():
+    """Загружает исходные данные в БД."""
+
     time.sleep(1)
     for form in forms_data:
         if not collection.find_one({'name': form['name']}):
