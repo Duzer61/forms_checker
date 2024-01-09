@@ -128,6 +128,8 @@ ENV/
 env.bak/
 venv.bak/
 requirements.bak
+app.bak
+data_demo.bak
 
 # Spyder project settings
 .spyderproject

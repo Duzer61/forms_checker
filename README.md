@@ -2,6 +2,7 @@
 # Проект "Forms_checker". Написан в качестве тестового задания для [LeadHit](https://leadhit.ru/)
 
 ### Описание задания доступно [по ссылке](https://docs.google.com/document/d/1fMFwPBs53xzcrltEFOpEG4GWTaQ-5jvVLrNT6_hmC7I/edit#heading=h.pieurecv5l1j)
+Я немного расширил задание и добавил возможность делать запросы не только вида "**f_name1=value1&f_name2=value2**", но и через аргументы в запросе и через json.
 ___
 ### Для запуска проекта в контейнерах на локальной машине должен быть установлен [Docker](https://www.docker.com/).
 
@@ -16,6 +17,10 @@ ___
 	- `http://127.0.0.1:8000/get_form?sender=me&recipient=they&message=Hi%20there&datestamp=16.11.2023`
 	- `http://127.0.0.1:8000/get_form?username=JohnDoe&phone=%2B79055555555`
 	- `http://127.0.0.1:8000/get_form?sender=me&date=16.11.2023&date_fake=30.02.2023&phone=%2B79055555555&phone_fake=%2B790555555559&email=example@mail.com&email_fake=example@@mail.com`
+	- `username=Peter&phone=+79055555555`
+	- 	``
+	{"username": "Гвидо ван Россум", "email": "email@mail.ru", "password": "anypass"}
+	``
 ___
 
 В проекте реализован скрипт для демонстрации работы. Файл `demo.py` находится в

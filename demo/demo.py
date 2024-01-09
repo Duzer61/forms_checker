@@ -5,24 +5,25 @@ import time
 import requests
 from data_demo import req_data
 
-REQ_URL = 'http://127.0.0.1:8000/get_form?'
+REQ_URL = 'http://127.0.0.1:8000/get_form'
 
 
 def get_responses():
     """Отправляет POST-запросы и выводит в терминал ответы."""
 
     for data in req_data:
-        url = REQ_URL + data.replace(' ', '%20').replace('+', '%2B')
         try:
-            response = requests.post(url, timeout=1)
+            response = requests.post(REQ_URL, data=data, timeout=1)
         except Exception:
-            print(f"Error: {url}")
+            print(f"Error: {data}")
             continue
-        data = response.text
-        print(f'Request: {url}')
+        response_data = response.text
+        print(f'Request: {data}')
         print()
         print('Response:')
-        print(f'{json.dumps(json.loads(data), indent=4)}', end='\n' * 3)
+        print(
+            f'{json.dumps(json.loads(response_data), indent=4)}', end='\n' * 3
+        )
         time.sleep(0.7)
 
 
